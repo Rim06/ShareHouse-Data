@@ -83,10 +83,6 @@ class shareshareItem(Item):
     mgt_rule = Field()
     mgt_event = Field()
 
-class ShareshareListItem(Item):
-    title = Field()
-    url = Field()
-
 class kabochaItem(Item):
     タイトル = Field()
     URL = Field()

@@ -5,7 +5,6 @@ WebScraping/middlewares.py
 WebScraping/pipelines.py
 WebScraping/settings.py
 WebScraping/spiders/FooSpider.py
-WebScraping/spiders/SS_propertyList.py
 WebScraping/spiders/__init__.py
 WebScraping/spiders/get_shareshare.py
 WebScraping/spiders/kabocha.py

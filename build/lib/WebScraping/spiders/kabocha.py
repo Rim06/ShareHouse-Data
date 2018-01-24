@@ -117,17 +117,7 @@ class KabochaSpider(scrapy.Spider):
             # h2 タグの中から必要な情報を抽出する
             self.url = self.headURL + d.xpath('div/div[3]/div[2]/ul/li[1]/a/@href').extract_first()
             yield scrapy.Request(self.url, self.parse_detail)
-
-        # print("次読み込みスタート")
-        # next_page = "https://www.kabocha-b.jp/search/index/?class[]=c1&pg="+ str(pageNo)
-        # if pageNo == 49:
-        #     print("■■■■■■■ループ終了■■■■■■■")
-        #     return
-        # else:
-        #     pageNo += 1
-        #     print("■■■■■■■次ページ■■■■■■■")
-        #     print(next_page)
-        #     yield scrapy.Request(next_page, callback=self.parse)
+            return
 
     def parse_detail(self, response):
 
